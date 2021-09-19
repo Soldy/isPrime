@@ -1,7 +1,7 @@
 fn is_prime(number: u32) -> bool {
 //    let limit = (n as f64).sqrt() as u32;
-    let limit = number;
-    for i in 2..=limit/2 {
+    let limit = number/2;
+    for i in 2..=limit {
         if number % i == 0 {
              return false;
          }
