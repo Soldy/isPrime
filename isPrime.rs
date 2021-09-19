@@ -1,8 +1,8 @@
-fn isPrime(n: u32) -> bool {
+fn is_prime(number: u32) -> bool {
 //    let limit = (n as f64).sqrt() as u32;
-    let limit = n;
-    for i in 2..=limit {
-        if n % i == 0 {
+    let limit = number;
+    for i in 2..=limit/2 {
+        if number % i == 0 {
              return false;
          }
     }
@@ -12,7 +12,7 @@ fn isPrime(n: u32) -> bool {
 fn main(){
    let mut primes : u32 = 0;
    for k in 2..=200000 {
-        if (isPrime(k)==true){
+        if is_prime(k) {
            primes +=1;
         }
    }
