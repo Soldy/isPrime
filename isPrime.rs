@@ -11,7 +11,7 @@ fn is_prime(number: u32) -> bool {
 
 fn main(){
    let mut primes : u32 = 0;
-   for k in 2..=200000 {
+   for k in 3..=2000000 {
         if is_prime(k) {
            primes +=1;
         }
