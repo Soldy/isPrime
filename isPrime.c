@@ -4,7 +4,8 @@ int primes =0;
 
 bool isPrime(int number){
    int i;
-   for (i = 2; i < (number / 2 ); i++ ){
+   int end = (int)(number/2); // its an idiotic unsafe choice
+   for (i = 2; i < end; i++ ){
        if (number % i == 0){
            return false;
        }
